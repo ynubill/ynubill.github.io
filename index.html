@@ -145,6 +145,177 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/03/16/%E7%BB%AA%E8%AE%BA/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Bill Chang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BillChang的小破站">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/03/16/%E7%BB%AA%E8%AE%BA/" class="post-title-link" itemprop="url">Untitled</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2022-03-16 11:20:00 / Modified: 10:09:46" itemprop="dateCreated datePublished" datetime="2022-03-16T11:20:00+08:00">2022-03-16</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="算法的基本概念"><a href="#算法的基本概念" class="headerlink" title="算法的基本概念"></a><u>算法的基本概念</u></h1><h2 id="为什么要学习算法"><a href="#为什么要学习算法" class="headerlink" title="为什么要学习算法"></a><em>为什么要学习算法</em></h2><blockquote>
+<ol>
+<li>程序设计的<strong>核心</strong>是<em>算法设计</em></li>
+<li><ul>
+<li>检索技术</li>
+<li>压缩与解压缩</li>
+<li>信息安全与数据加密  </li>
+</ul>
+</li>
+</ol>
+</blockquote>
+<h2 id="算法及其重要特性"><a href="#算法及其重要特性" class="headerlink" title="算法及其重要特性"></a><em>算法及其重要特性</em></h2><blockquote>
+<p>![](C:\Users\16336\OneDrive\文档\Markdown\算法\屏幕截图 2022-03-15 210432.png)</p>
+</blockquote>
+<h2 id="算法的描述方法"><a href="#算法的描述方法" class="headerlink" title="算法的描述方法"></a><em>算法的描述方法</em></h2><table>
+<thead>
+<tr>
+<th align="center">类别</th>
+<th align="center">优点</th>
+<th align="center">缺点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">自然语言</td>
+<td align="center">容易理解</td>
+<td align="center">容易出现二义性</td>
+</tr>
+<tr>
+<td align="center">流程图</td>
+<td align="center">直观易懂</td>
+<td align="center">严密性不如程序设计语言，灵活性不如自然语言</td>
+</tr>
+<tr>
+<td align="center">程序设计语言</td>
+<td align="center">能由计算机直接执行</td>
+<td align="center">抽象性差</td>
+</tr>
+<tr>
+<td align="center">伪代码</td>
+<td align="center">极小化了描述算法的不必要的技术细节</td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<h2 id="算法设计的一般过程"><a href="#算法设计的一般过程" class="headerlink" title="算法设计的一般过程"></a><em>算法设计的一般过程</em></h2><blockquote>
+<p>![](C:\Users\16336\OneDrive\文档\Markdown\算法\屏幕截图 2022-03-15 212458.png)</p>
+</blockquote>
+<h2 id="重要的问题类型"><a href="#重要的问题类型" class="headerlink" title="重要的问题类型"></a><em>重要的问题类型</em></h2><blockquote>
+<ol>
+<li>查找问题</li>
+<li>排序问题</li>
+<li>图问题</li>
+<li>组合问题</li>
+<li>几何问题</li>
+</ol>
+</blockquote>
+<h1 id="算法分析"><a href="#算法分析" class="headerlink" title="算法分析"></a><u>算法分析</u></h1><h2 id="渐进符号"><a href="#渐进符号" class="headerlink" title="渐进符号"></a><em>渐进符号</em></h2><blockquote>
+<ol>
+<li><p>大$O$符号</p>
+<ul>
+<li><p><em>定义</em>：若存在两个正的常数c和$n_{0}$，对于任意$n&gt;n_{0}$,都有$T(n)\leq c\times f(n)$,则称$T（n）=O(f(n))$ </p>
+</li>
+<li><p>![](C:\Users\16336\OneDrive\文档\Markdown\算法\屏幕截图 2022-03-15 232235.png)</p>
+</li>
+<li><p>$\lim\limits_{n\to\infty}\frac{T(n)}{f(n)}=c$</p>
+</li>
+<li><p>$O(f)+O(g)=O(f+g)$</p>
+</li>
+</ul>
+</li>
+<li><p>大$\Omega$符号</p>
+<ul>
+<li><em>定义</em>：若存在两个正的常数c和$n_{0}$，对于任意$n&gt;n_{0}$,都有$T(n)\geqslant c\times f(n)$,则称$T（n）=\Omega(f(n))$ </li>
+<li>![](C:\Users\16336\OneDrive\文档\Markdown\算法\屏幕截图 2022-03-15 233809.png)</li>
+</ul>
+</li>
+<li><p>$\Theta$符号</p>
+<ul>
+<li><em>定义</em>：若存在三个正的常数$c_{1}$、$c_{2}$和$n_{0}$，对于任意$n&gt;n_{0}$,都有$c_{1}\times f(n)\geqslant  T(n)\geqslant c_{2}\times f(n)$,则称$T（n）=\Theta (f(n))$</li>
+<li>![](C:\Users\16336\OneDrive\文档\Markdown\算法\屏幕截图 2022-03-15 234105.png)</li>
+</ul>
+</li>
+</ol>
+</blockquote>
+<h2 id="递归算法的分析"><a href="#递归算法的分析" class="headerlink" title="递归算法的分析"></a><em>递归算法的分析</em></h2><blockquote>
+<ol>
+<li><p>例子</p>
+<ul>
+<li>算法：找出集合S中的最大元和最小元</li>
+<li>输入：S的元素S[1],S[2],…,S[N]</li>
+<li>输出：S中的最大元和最小元</li>
+<li>方法: ![](C:\Users\16336\OneDrive\文档\Markdown\算法\屏幕截图 2022-03-16 085154.png)</li>
+</ul>
+</li>
+<li><p>递归方程</p>
+<p> $T(n)=\begin{cases}1&amp;当n=2时\2T(n/2)+2&amp;当n&gt;2时\end{cases}$</p>
+</li>
+<li><p>求解递推式的技术</p>
+<ul>
+<li><p>猜测技术</p>
+<p>  $T(n)=\frac{3}{2}n-2$</p>
+</li>
+<li><p>扩展递归技术</p>
+<p>  $\begin{aligned}T(2^{k})&amp;=2 T(2^{k-1})+2\&amp;=2^{k-1}T(2)+2^{k-1}+2^{k-2}+\dots+2^{2}+2 \&amp;=2^{k-1}T(2)+2^{k}-2\end{aligned}$</p>
+</li>
+<li><p>通用分值递推式</p>
+<p>  <em>定理</em>：设a,b,c是非负常数，n是b的整幂。则递归方程</p>
+<p>  ​           $T(n)=\begin{cases}c&amp;对n=1\aT(\frac{n}{b})+cn&amp;对n&gt;1\end{cases}$ 的解是</p>
+<p>  ​           $T(n)=\begin{cases}0(n)&amp;如果a&lt;b\o(n\log_{2}{n})&amp;如果a=b\o{n^{\log_{b}{a}}}&amp;如果a&gt;b\end{cases}$</p>
+</li>
+</ul>
+</li>
+</ol>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="http://example.com/2022/03/14/%E6%98%8E%E5%A4%A9/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -359,7 +530,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
